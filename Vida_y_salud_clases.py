@@ -76,7 +76,11 @@ while True:
             print("Afiliado no encontrado")
     
     elif opcion == "4":
-        
+        print("\n--- Fin del programa ---")
+        print("Versión: 4.0")
+        print("Desarrollado por: Lucas Delgado, Maximiliano Osores, Daniel Pinto, Valentina Rivera")
+        print("Saliendo del programa...")
+        break
 
     else:
         print("Opción inválida")
