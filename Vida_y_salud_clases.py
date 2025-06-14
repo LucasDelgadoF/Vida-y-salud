@@ -59,7 +59,21 @@ while True:
             print("Afiliado no encontrado")
     
     elif opcion == "3":
-        
+        rut = input("Ingrese RUT para imprimir certificado: ")
+        if rut in afiliados:
+            datos = afiliados[rut]
+            print("\n--- CERTIFICADO DE AFILIACIÓN ---")
+            print("Nombre certificado: Certificado de afiliación Isapre Vida y Salud")
+            print(f"Nombre afiliado: {datos['Nombre']} {datos['Apellido']}")
+            print(f"Rut: {rut}")
+            print(f"Edad: {datos['Edad']}")
+            print(f"Estado Civil: {datos['Estado Civil']}")
+            print(f"Género: {datos['Género']}")
+            print(f"Fecha de afiliación: {datos['Fecha Afiliación']}")
+            print(f"Monto certificado: ${datos['Monto Certificado']}")
+            print("-------------------------------\n")
+        else:
+            print("Afiliado no encontrado")
     
     elif opcion == "4":
         
