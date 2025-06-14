@@ -46,7 +46,17 @@ while True:
         print("Afiliado registrado")
     
     elif opcion == "2":
-       
+        rut = input("RUT a buscar: ")
+        if rut in afiliados:
+            print("Nombre:", afiliados[rut]["Nombre"])
+            print("Apellido:", afiliados[rut]["Apellido"])
+            print("Edad:", afiliados[rut]["Edad"])
+            print("Estado Civil:", afiliados[rut]["Estado Civil"])
+            print("Género:", afiliados[rut]["Género"])
+            print("Fecha Afiliación:", afiliados[rut]["Fecha Afiliación"])
+            print("Monto Certificado:", afiliados[rut]["Monto Certificado"])
+        else:
+            print("Afiliado no encontrado")
     
     elif opcion == "3":
         
